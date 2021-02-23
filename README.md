@@ -9,7 +9,7 @@ Biosplitter uses the environment variables
 - `DATASOURCE`: A URL to a file that should be distributed
 - `PARAMS`:  A JSON object that describes parameters that specify the actual splitting
 
-to determine suitable locations for the splitting of the input file. These locations are outputted as a JSON formatted list
+to determine suitable locations for the splitting of the input file. These locations are outputted to stdout as a JSON formatted list
 that looks like this:
 
 ```json
@@ -23,7 +23,7 @@ that looks like this:
 
 The `index` value is an incrementing number. `range` refers to the string `Range:bytes=START-STOP` that specifier a HTML Range HEADER in curl.
 
-This behaviour is distributed in a [docker container](https://hub.docker.com/repository/docker/stanni/biosplitter)
+Biosplitter is distributed in a [docker container](https://hub.docker.com/repository/docker/stanni/biosplitter)
 
 #### PARAMS
 
